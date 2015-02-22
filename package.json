@@ -1,0 +1,27 @@
+{
+  "name": "todo7",
+  "version": "1.0.0",
+  "description": "Framework7 todo demo app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nolimits4web/ToDo7.git"
+  },
+  "author": "Vladimir Kharlampidi",
+  "license": [
+    "MIT"
+  ],
+  "bugs": {
+    "url": "https://github.com/nolimits4web/ToDo7/issues"
+  },
+  "homepage": "http://www.idangero.us/framework7/",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-less": "~3.0.0",
+    "gulp-jade": "~1.0.0",
+    "gulp-connect": "~2.2.0",
+    "gulp-open": "~0.3.2"
+  }
+}

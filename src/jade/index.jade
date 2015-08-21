@@ -6,7 +6,8 @@ html.with-statusbar-overlay(manifest="manifest.php")
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
     title ToDo7
-    link(rel="stylesheet", href="libs/framework7/dist/css/framework7.min.css")
+    link(rel="stylesheet", href="libs/framework7/dist/css/framework7.ios.min.css")
+    link(rel="stylesheet", href="libs/framework7/dist/css/framework7.ios.colors.min.css")
     link(rel="stylesheet", href="css/todo7.css")
     // Favicon
     link(href="img/icon-57.png", rel="shortcut icon")
@@ -76,7 +77,7 @@ html.with-statusbar-overlay(manifest="manifest.php")
                           span(data-color="purple").color
                           span(data-color="cyan").color
               .content-block
-                a.button.add-task Add Task
+                a.button.add-task(href="#") Add Task
     // Template
     script(id="todo-item-template", type="text/template")
       ul

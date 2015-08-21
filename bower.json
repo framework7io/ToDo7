@@ -19,6 +19,6 @@
     "libs"
   ],
   "dependencies": {
-    "framework7": "~1.0.1"
+    "framework7": "~1.2.0"
   }
 }

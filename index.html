@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="manifest.php" class="with-statusbar-overlay">
+<html class="with-statusbar-overlay" manifest="manifest.php">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -10,21 +10,20 @@
     <link rel="stylesheet" href="libs/framework7/dist/css/framework7.ios.colors.min.css">
     <link rel="stylesheet" href="css/todo7.css">
     <!-- Favicon-->
-    <link href="img/icon-57.png" rel="shortcut icon"> 
-    <!-- iOS 7 iPad (retina) -->
-    <link href="img/icon-152.png" sizes="152x152" rel="apple-touch-icon">
-    <!-- iOS 6 iPad (retina) -->
-    <link href="img/icon-144.png" sizes="144x144" rel="apple-touch-icon">
-    <!-- iOS 7 iPhone (retina) -->
-    <link href="img/icon-120.png" sizes="120x120" rel="apple-touch-icon">
-    <!-- iOS 6 iPhone (retina) -->
-    <link href="img/icon-114.png" sizes="114x114" rel="apple-touch-icon">
-    <!-- iOS 7 iPad -->
-    <link href="img/icon-76.png" sizes="76x76" rel="apple-touch-icon">
-    <!-- iOS 6 iPad -->
-    <link href="img/icon-72.png" sizes="72x72" rel="apple-touch-icon">
-    <!-- iOS 6 iPhone -->
-    <link href="img/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+    <link href="img/icon-57.png" rel="shortcut icon"> <!-- iOS 7 iPad (retina) -->
+<link href="img/icon-152.png" sizes="152x152" rel="apple-touch-icon">
+<!-- iOS 6 iPad (retina) -->
+<link href="img/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+<!-- iOS 7 iPhone (retina) -->
+<link href="img/icon-120.png" sizes="120x120" rel="apple-touch-icon">
+<!-- iOS 6 iPhone (retina) -->
+<link href="img/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+<!-- iOS 7 iPad -->
+<link href="img/icon-76.png" sizes="76x76" rel="apple-touch-icon">
+<!-- iOS 6 iPad -->
+<link href="img/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+<!-- iOS 6 iPhone -->
+<link href="img/icon-57.png" sizes="57x57" rel="apple-touch-icon">
   </head>
   <body>
     <!-- Statusbar overlay-->
@@ -36,11 +35,11 @@
           <div class="navbar-inner">
             <div class="left"></div>
             <div class="center sliding">ToDo7</div>
-            <div class="right"><a href="#" class="link icon-only open-popup"><i class="icon icon-plus">+</i></a></div>
+            <div class="right"><a class="link icon-only open-popup" href="#"><i class="icon icon-plus">+</i></a></div>
           </div>
         </div>
         <div class="pages">
-          <div data-page="index" class="page">
+          <div class="page" data-page="index">
             <div class="page-content">
               <div class="list-block todo-items-list theme-pink"></div>
             </div>
@@ -55,7 +54,7 @@
           <div class="navbar-inner">
             <div class="left"></div>
             <div class="center sliding">New Task</div>
-            <div class="right"><a href="#" class="link close-popup">Cancel</a></div>
+            <div class="right"><a class="link close-popup" href="#">Cancel</a></div>
           </div>
         </div>
         <div class="pages">
@@ -77,13 +76,13 @@
                     <div class="item-content">
                       <div class="item-inner"> 
                         <div class="item-title label">Color</div>
-                        <div class="item-input"><span data-color="orange" class="color selected"></span><span data-color="green" class="color"></span><span data-color="blue" class="color"></span><span data-color="yellow" class="color"></span><span data-color="white" class="color"></span><span data-color="pink" class="color"></span><span data-color="purple" class="color"></span><span data-color="cyan" class="color"></span></div>
+                        <div class="item-input"><span class="color selected" data-color="orange"></span><span class="color" data-color="green"></span><span class="color" data-color="blue"></span><span class="color" data-color="yellow"></span><span class="color" data-color="white"></span><span class="color" data-color="pink"></span><span class="color" data-color="purple"></span><span class="color" data-color="cyan"></span></div>
                       </div>
                     </div>
                   </li>
                 </ul>
               </div>
-              <div class="content-block"><a href="#" class="button add-task">Add Task</a></div>
+              <div class="content-block"><a class="button add-task" href="#">Add Task</a></div>
             </div>
           </div>
         </div>
@@ -92,7 +91,7 @@
     <!-- Template-->
     <script id="todo-item-template" type="text/template">
       <ul>{{#each this}}
-        <li data-color="{{color}}" data-id="{{id}}" class="swipeout">
+        <li class="swipeout" data-color="{{color}}" data-id="{{id}}">
           <div class="swipeout-content">
             <label class="label-checkbox item-content"><input type="checkbox" {{checked}}>
               <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
@@ -101,7 +100,7 @@
               </div>
             </label>
           </div>
-          <div class="swipeout-actions-right"><a href="#" class="swipeout-delete">Delete</a></div>
+          <div class="swipeout-actions-right"><a class="swipeout-delete" href="#">Delete</a></div>
         </li>{{/each}}
       </ul>
     </script>
